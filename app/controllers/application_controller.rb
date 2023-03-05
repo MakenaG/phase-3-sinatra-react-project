@@ -1,8 +1,18 @@
-require 'sinatra/base'
 
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   enable :sessions
+
+  #add routes
+  get "/users" do
+    users = User.all
+    users.to_json
+  end
+
+  get "/memes" do
+    memes = Meme.all
+    memes.to_json
+  end
 
 # register a user
 post '/users' do
