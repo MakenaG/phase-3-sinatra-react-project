@@ -1,3 +1,5 @@
+require 'sinatra/base'
+
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   enable :sessions
