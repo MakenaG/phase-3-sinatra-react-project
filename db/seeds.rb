@@ -24,5 +24,5 @@ User.create(username:"user33",email:"shani.daniel@hauck.org",password:"password"
 User.create(username:"user44",email:"benton@cummings.biz",password:"password")
 User.create(username:"user55",email:"roland@armstrong.co",password:"password")
 User.create(username:"user66",email:"geri_orn@bednar.co",password:"password")
-#pets input information
+#memes input information
 Meme.create(title:"Bosco",message:"white",user_id:4)
