@@ -2,12 +2,21 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   enable :sessions
 
-# register a user
-post '/users' do
+  get "/users" do
+    users = User.all
+    users.to_json
+  end
+
+  get "/meme" do
+    users = Meme.all
+    users.to_json
+  end
+
+#  register a user
+ post '/users' do
   user = User.new(
-    username: params[:username],
-    email: params[:email],
-    password: params[:password]
+   username: params[:username],
+    email: params[:email],   password: params[:password]
   )
   if user.save
     session[:user_id] = user.id

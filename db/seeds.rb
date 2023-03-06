@@ -1,13 +1,28 @@
-puts "🌱 Seeding spices..."
+# puts "🌱 Seeding spices..."
 
+# # Seed your database here
+# 30.times do 
+#     user = User.create(
+#     username: Faker::Name.name,
+#         email: Faker::Internet.email,
+#         password: "password"
+
+#     )
+# end
+
+# user = User.find(1) # find an existing user or create a new one
+# meme = Meme.create(title:"bosco",message: "meeaow",user: user) # create a new meme and assign it to the user
+
+# puts "✅ Done seeding!"
+
+puts ":seedling: Seeding pets and users..."
 # Seed your database here
-30.times do 
-    user = User.create(
-    username: Faker::Name.name,
-        email: Faker::Internet.email,
-        password: "password"
-
-    )
-end
-
-puts "✅ Done seeding!"
+#user input information
+User.create(username:"user11",email:"jennifer@legros.org",password:"password")
+User.create(username:"user22",email:"hal@graham-kunze.co",password:"password")
+User.create(username:"user33",email:"shani.daniel@hauck.org",password:"password")
+User.create(username:"user44",email:"benton@cummings.biz",password:"password")
+User.create(username:"user55",email:"roland@armstrong.co",password:"password")
+User.create(username:"user66",email:"geri_orn@bednar.co",password:"password")
+#pets input information
+Meme.create(title:"Bosco",message:"white",user_id:4)
