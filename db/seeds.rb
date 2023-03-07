@@ -15,7 +15,7 @@
 
 # puts "✅ Done seeding!"
 
-puts ":seedling: Seeding pets and users..."
+puts ":seedling: Seeding memes and users..."
 # Seed your database here
 #user input information
 User.create(username:"user11",email:"jennifer@legros.org",password:"password")
@@ -26,3 +26,6 @@ User.create(username:"user55",email:"roland@armstrong.co",password:"password")
 User.create(username:"user66",email:"geri_orn@bednar.co",password:"password")
 #memes input information
 Meme.create(title:"Bosco",message:"white",user_id:4)
+Meme.create(title: 'Funny Meme', message: 'LOL', user_id: 5)
+Meme.create(title: 'Cute Meme', message: 'Aww', user_id: 7)
+Meme.create(title: 'Silly Meme', message: 'Haha', user_id: 8)
